@@ -1,0 +1,519 @@
+/* color pallet */
+
+:root {
+  --color-primary: #172339;
+  --color-secondary: #49566d;
+  --purple: #cb30e3;
+  --light-purple: #a060ff;
+  --orange: #ffa84e;
+  --light-orange: #f3ede7;
+  --white: #faf8f6;
+}
+
+/* foot family */
+
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&display=swap");
+
+/* reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*  */
+
+html {
+  font-size: 10px;
+  font-family: "Epilogue", sans-serif;
+}
+
+body {
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: -2.5px;
+  font-weight: 400;
+  background: var(--white);
+}
+
+/* utility classes */
+
+/* container --- */
+.container-xl {
+  max-width: 1140px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+/* text ------------*/
+
+.heading-xl-bold {
+  font-size: 72px;
+  line-height: 78px;
+  letter-spacing: -1.5px;
+  font-weight: 700;
+}
+
+.heading-xl-regular {
+  font-size: 72px;
+  line-height: 78px;
+  letter-spacing: -1.5px;
+  font-weight: 400;
+}
+
+.heading-l-bold {
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -0.5px;
+  font-weight: 700;
+}
+
+.heading-l-regular {
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -0.5px;
+  font-weight: 400;
+}
+
+.heading-m {
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: -0.2px;
+  font-weight: 700;
+}
+
+.heading-s {
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -2.5px;
+  font-weight: 700;
+}
+
+.text {
+  font-size: 18px;
+  line-height: 35px;
+  letter-spacing: 0px;
+  font-weight: 400;
+}
+
+.footer-text {
+  font-size: 15px;
+  line-height: 32px;
+  letter-spacing: 0px;
+  font-weight: 400;
+}
+
+/* buttons -------------*/
+
+/* primary-button */
+
+.btn-primary {
+  display: block;
+  border: none;
+  border-radius: 5px;
+  padding: 1rem 1.5rem;
+  background: var(--color-primary);
+  color: var(--white);
+}
+
+.btn-primary:hover {
+  background-image: linear-gradient(
+    to bottom right,
+    var(--light-purple),
+    var(--orange)
+  );
+}
+
+/* secondary-button */
+
+.btn-secondary {
+  display: block;
+  border-radius: 5px;
+  padding: 1rem 1.5rem;
+  background: var(--white);
+  border: var(--color-primary) solid 1px;
+}
+
+.btn-secondary:hover {
+  background: var(--color-primary);
+  color: var(--white);
+  transition: all 400ms linear;
+}
+
+/* navbar */
+#navbar {
+  padding: 3rem 0;
+}
+
+#navbar .container-xl {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* showcase */
+
+header .container-xl {
+  padding-top: 4rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+header .item-1 {
+  width: 50%;
+  align-self: center;
+  position: relative;
+}
+
+header .item-1 .h-1 {
+  margin-bottom: 4rem;
+}
+
+.text-container-body p {
+  margin-bottom: 4rem;
+}
+
+header .text-container-body {
+  width: 55%;
+}
+
+header .solution-container {
+  display: flex;
+  flex-direction: column;
+}
+
+header .solution-img {
+  width: 50%;
+  align-self: flex-end;
+  margin-right: 2rem;
+}
+
+header .item-2 {
+  width: 40%;
+  position: relative;
+  z-index: -1;
+  right: 13.2rem;
+}
+
+.display-2 {
+  display: none;
+}
+
+header .item-3 {
+  width: 10%;
+  align-self: center;
+  position: relative;
+  right: 4rem;
+  margin-top: 4rem;
+}
+
+.item-3 .stats {
+  margin-bottom: 4rem;
+}
+
+/* card-section */
+
+#card-section {
+  color: white;
+  position: relative;
+  top: 225px;
+}
+
+#card-section .card {
+  background: var(--color-primary);
+  height: 70%;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+
+#card-section .img-container {
+  width: 40%;
+  background: url("/assets/pattern-blur.svg") no-repeat center center/cover;
+}
+
+#card-section .card-img-1 {
+  display: block;
+  margin: 0 auto;
+  height: 100%;
+}
+
+#card-section .svg-container {
+  align-self: center;
+  width: 2%;
+  margin-bottom: 12rem;
+}
+
+#card-section .text-container {
+  align-self: center;
+  width: 40%;
+  margin: 0 auto;
+}
+
+.text-container h1,
+.text-container p {
+  padding-bottom: 2rem;
+}
+
+/* footer-section */
+footer {
+  background: var(--light-orange);
+  padding-top: 30rem;
+  padding-bottom: 4rem;
+}
+
+footer .container-xl {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+footer .icon-container .icon {
+  margin: 0.5rem;
+}
+
+footer .icon-container img:hover {
+  background: var(--white);
+}
+
+footer .logo {
+  height: 25%;
+}
+
+/* tablet ------------------------------------------- */
+@media only screen and (max-width: 768px) {
+  .heading-xl-regular,
+  .heading-xl-bold {
+    font-size: 58px;
+  }
+
+  header .container-xl {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  header .item-1 {
+    width: 75%;
+  }
+
+  header .solution-img {
+    margin-right: 5rem;
+  }
+
+  header .item-2 {
+    width: 20%;
+    right: 150px;
+  }
+
+  header .item-3 {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  header .text-container-body {
+    width: 65%;
+  }
+
+  /* card-------------- */
+
+  #card-section {
+    color: white;
+    position: relative;
+    top: 250px;
+  }
+
+  #card-section .card {
+    background: var(--color-primary);
+    height: 100%;
+    display: block;
+  }
+
+  #card-section .img-container {
+    width: 100%;
+    background: url("/assets/pattern-blur.svg") no-repeat;
+  }
+
+  #card-section .card-img-1 {
+    display: block;
+    height: 35%;
+  }
+
+  #card-section .svg-container {
+    width: 100%;
+    margin: 1rem;
+  }
+
+  #card-section .svg-container svg {
+    display: block;
+    margin: 0 auto;
+    height: 10%;
+    width: 10%;
+  }
+
+  #card-section .text-container {
+    width: 100%;
+    text-align: center;
+  }
+
+  .text-container .text {
+    padding: 0 10rem;
+  }
+  .text-container .heading-m {
+    margin-top: 2rem;
+  }
+
+  /* footer-section */
+  footer {
+    background: var(--light-orange);
+    padding-top: 35rem;
+    padding-bottom: 4rem;
+  }
+
+  footer .container-xl {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  footer .icon-container .icon {
+    margin: 0.5rem;
+  }
+
+  footer .icon-container img:hover {
+    background: var(--white);
+  }
+
+  footer .logo {
+    height: 25%;
+  }
+}
+
+/* mobile ---------------------*/
+@media only screen and (max-width: 500px) {
+  /* showcase */
+
+  .heading-xl-regular,
+  .heading-xl-bold {
+    font-size: 50px;
+  }
+
+  header .container-xl {
+    display: block;
+  }
+
+  header .item-1 {
+    width: 100%;
+  }
+
+  header .text-container-body {
+    width: 100%;
+  }
+
+  header .solution-img {
+    margin-right: 4.5rem;
+  }
+
+  header .item-2 {
+    width: 100%;
+    position: static;
+    right: 0;
+    margin-top: 4rem;
+  }
+
+  .display-1 {
+    display: none;
+  }
+
+  .display-2 {
+    display: block;
+  }
+
+  .display-2 img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  header .item-3 {
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  /* card-------------- */
+  #card-section {
+    color: white;
+    position: relative;
+    top: 250px;
+  }
+
+  #card-section .card {
+    background: var(--color-primary);
+    height: 100%;
+    display: block;
+  }
+
+  #card-section .img-container {
+    width: 100%;
+    background: url("/assets/pattern-blur.svg") no-repeat;
+  }
+
+  #card-section .card-img-1 {
+    display: block;
+    height: 30%;
+  }
+
+  #card-section .svg-container {
+    width: 100%;
+    margin: 1rem;
+  }
+
+  #card-section .svg-container svg {
+    display: block;
+    margin: 0 auto;
+    height: 10%;
+    width: 10%;
+  }
+
+  #card-section .text-container {
+    width: 100%;
+    text-align: center;
+  }
+
+  .text-container .text {
+    padding: 0 1rem;
+  }
+  .text-container .heading-m {
+    margin-top: 1rem;
+  }
+
+  /* footer-section */
+  footer {
+    background: var(--light-orange);
+    padding-top: 30rem;
+    padding-bottom: 4rem;
+  }
+
+  footer .container-xl {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer .logo {
+    margin-bottom: 4rem;
+    height: 20%;
+  }
+
+  footer p {
+    margin-bottom: 4rem;
+    font-size: 18px;
+  }
+
+  footer .icon-container .icon {
+    margin: 1.5rem;
+  }
+}
